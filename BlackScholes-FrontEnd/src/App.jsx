@@ -1,6 +1,33 @@
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [S, setS] = useState(100.00)
+  const [K, setK] = useState(100.00)
+  const [r, setr] = useState(0.10)
+  const [v, setv] = useState(0.50)
+  const [T, setT] = useState(1.00)
+
+  const handleInputChangeS = (event) => {
+    setS(event.target.value);
+  };
+
+  const handleInputChangeK = (event) => {
+    setK(event.target.value);
+  };
+
+  const handleInputChanger = (event) => {
+    setr(event.target.value);
+  };
+
+  const handleInputChangev = (event) => {
+    setv(event.target.value);
+  };
+
+  const handleInputChangeT = (event) => {
+    setT(event.target.value);
+  };
+
   return (
     <>
     <style jsx global>{`
@@ -13,23 +40,23 @@ function App() {
       <div className='sliders'>
         <h2 className='slider-heading'>📊 Black-Scholes Model</h2>
         <label htmlFor="underlying-price" className='label'>Underlying Price</label>
-        <input id="underlying-price" type="number" className='inpt' min={0}/>
+        <input id="underlying-price" type="number" defaultValue={S} onChange={handleInputChangeS} className='inpt' min={0}/>
         <br />
 
         <label htmlFor="strike-price" className='label'>Strike Price</label>
-        <input id="strike-price" type="number" className='inpt' min={0}/>
+        <input id="strike-price" type="number" defaultValue={K} onChange={handleInputChangeK} className='inpt' min={0}/>
         <br />
 
         <label htmlFor="risk-free-rate" className='label'>Risk-Free Rate</label>
-        <input id="risk-free-rate" type="number" className='inpt' min={0}/>
+        <input id="risk-free-rate" type="number" defaultValue={r} onChange={handleInputChanger} className='inpt' min={0} step={0.1}/>
         <br />
 
         <label htmlFor="volatility" className='label'>Volatility</label>
-        <input id="volatility" type="number" className='inpt' min={0}/>
+        <input id="volatility" type="number" defaultValue={v} onChange={handleInputChangev} className='inpt' min={0} step={0.1}/>
         <br />
 
         <label htmlFor="maturity" className='label'>Maturity</label>
-        <input id="maturity" type="number" className='inpt' min={0}/>
+        <input id="maturity" type="number" defaultValue={T} onChange={handleInputChangeT} className='inpt' min={0}/>
       </div>
 
       <div className='content'>
@@ -45,11 +72,11 @@ function App() {
           </tr>
 
           <tr>
-            <td>$100.00</td>
-            <td>$100.00</td>
-            <td>0.1</td>
-            <td>0.5</td>
-            <td>1</td>
+            <td>{S}</td>
+            <td>{K}</td>
+            <td>{r}</td>
+            <td>{v}</td>
+            <td>{T}</td>
           </tr>
         </table>
 
