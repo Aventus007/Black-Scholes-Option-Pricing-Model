@@ -1,0 +1,186 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 17, 23);
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    flex: 3.6;
+    background-color: rgb(14, 17, 23);
+}
+
+.heading{
+    margin-top: 0px;
+    background-color: rgb(14, 17, 23);
+    margin-left: 75px;
+}
+
+.sliders{
+    flex: 1;
+    background-color: rgba(38,39,48,255);
+    /* height: 100%;
+    width: 100%; */
+    height: 165vh;
+    overflow: overlay;
+}
+
+.slider-heading{
+    margin-top: 75px;
+    margin-left: 20px;
+    margin-bottom: 54px;
+}
+
+.label{
+    display: block;
+    margin-top: 15px;
+    margin-left: 23px;
+    margin-bottom: 5px;
+}
+
+.inpt{
+    margin-left: 23.5px;
+    margin-bottom: 18px;
+    width: 270px;
+    height: 2.1rem;;
+    padding: 1px;
+    border-radius: 0.5rem;
+    background-color: rgb(14, 17, 23);
+    border: none;
+    color: white;
+    text-indent: 5px;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: rgb(14, 17, 23);
+    height: 150px;
+}
+
+.call{
+    background-color: #90ee90;
+    color: black;
+    margin-right: 10px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 495px;
+    margin-left: 75px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.call-label{
+    font-size: 1rem;
+    margin-bottom: 6px;
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.call-value{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.put{
+    background-color: #ffcccb;
+    color: black;
+    margin-right: 10px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 495px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.put-label{
+    font-size: 1rem;
+    margin-bottom: 6px;
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.put-value{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.table{
+    width: 85%;
+    margin-bottom: 1rem;
+    color: rgb(250, 250, 250);
+    border: 2px solid gray;
+    padding: 6px;
+    font-size: large;
+    line-height: 1.3;
+    /* border-collapse: collapse; */
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: right;
+    margin-left: 75px;
+    margin-right: 75px;
+    background-color: rgb(14, 17, 23);
+}
+
+.info{
+    background-color: rgb(20, 86, 110);
+    color: aliceblue;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 15px;
+    text-align: left;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+.heat-map-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 75px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.heatmap-heading{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.call-heat-map{
+    flex: 1;
+}
+
+.put-heat-map{
+    flex: 1;
+}
+
+.heat-img{
+    margin-top: 18px;
+    display: block;
+    height: 90%;
+    width: 95%;
+}
