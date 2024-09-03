@@ -25,12 +25,12 @@
     background-color: rgba(38,39,48,255);
     /* height: 100%;
     width: 100%; */
-    height: 100vh;
+    height: 165vh;
     overflow: overlay;
 }
 
 .slider-heading{
-    margin-top: 80px;
+    margin-top: 75px;
     margin-left: 20px;
     margin-bottom: 54px;
 }
@@ -151,4 +151,36 @@
     text-align: left;
     border-radius: 8px;
     line-height: 1.5;
+}
+
+.heat-map-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 75px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.heatmap-heading{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.call-heat-map{
+    flex: 1;
+}
+
+.put-heat-map{
+    flex: 1;
+}
+
+.heat-img{
+    margin-top: 18px;
+    display: block;
+    height: 90%;
+    width: 95%;
 }
